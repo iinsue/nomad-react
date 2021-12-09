@@ -13,8 +13,20 @@ Chapter2
 
 useEffect
 - 두 개의 argument를 가지는 함수
-- 첫 번째 argument는 우리가 딱 한번만 실행하고 싶은 코드
-ex) useEffect(callback, [])
+- 첫 번째 argument는 실행하고 싶은 코드
+ex) useEffect(callback, []) // 첫 렌더링때만 실행(즉, 한번만 실행)
+    useEffect(() => {
+      console.log("I run only once");
+    }, []);
+    useEffect(() => {
+      console.log("I ruen when 'keyword' changes.");
+    }, [keyword]);
+    useEffect(() => {
+      console.log("I run when 'counter' changes.");
+    }, [counter]);
+    useEffect(() => {
+      console.log("I run when keyword & counter change");
+    }, [keyword, counter]);
 
 리렌더링이 필요없을 때
   리렌더링 되어도 괜찮은 코드도 있지만,
