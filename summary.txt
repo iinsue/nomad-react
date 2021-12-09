@@ -1,4 +1,6 @@
-##Chapter1
+Chapter1
+#5.1 Tour of CRA
+
 MODULE.CSS
 - CRA의 고유 기능으로, className을 활용하여
   전역이 아닌 컴포넌트에 한정해서 스타일을 정해줄 수 있다.
