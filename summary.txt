@@ -79,3 +79,8 @@ Chapter3
       (원한다면 두개의 Route을 한번에 렌더링 할 수 있기때문에 제한한것)
    3. <Link></Link> : 브라우저 새로고침 없이도 유저를 다른 페이지로 이동시켜주는 컴포넌트
     (다른페이지로 새로고침하면서 이동하려면 기존에 쓰던 <a href="">를 이용하면 된다.)
+
+#7.6 Parameters
+  - React Router는 Dynamic(동적) URL을 지원해주기도 한다.
+    +a) Dynamic하다는 것은 URL에 변수를 넣을 수 있다는 의미
+    ex) URL/movie/:id
