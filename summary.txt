@@ -58,4 +58,24 @@ Chapter3
 #7.4 Movie App part Two
   key : React.js 에서만, map안에서 component들을 render할 때 사용하는 것.
   React Router : 페이지를 전환하는 것이다.
+
+#7.5 React Router
   실습환경고정 : npm i react-router-dom@5.3.0
+  <Switch><Switch/> : Route를 찾는 일을 한다. 여기서 Route는 localhost/movies/123 이라는 URL 을 의미
+    Route를 찾으면 컴포넌트를 렌더링한다.
+  
+  - 두개의 Route를 사용하는데 하나는 홈화면으로 가는 Route 이다.
+    <Route path="/">
+  
+  Browser Router & Hash Router
+  - Browser Router: 보통의 웹사이트 처럼 생김
+    ex) localhost:3000/movie
+  - Hash Router: 특이하게 # 이 중간에 붙음
+    ex) localhost:3000/#/movie
+  
+  react-router-dom : 아주 쿨한 컴포넌트들의 모음집
+   1. <Router><Router/> : 먼저 렌더링을 해주고 그안에 유저가 있는 url에 따라 유저에게 보여주고 싶은 것들 넣기
+   2. <Switch><Switch/> : 한 번에 하나의 Route만 렌더링 하기 위해서 쓴다.
+      (원한다면 두개의 Route을 한번에 렌더링 할 수 있기때문에 제한한것)
+   3. <Link></Link> : 브라우저 새로고침 없이도 유저를 다른 페이지로 이동시켜주는 컴포넌트
+    (다른페이지로 새로고침하면서 이동하려면 기존에 쓰던 <a href="">를 이용하면 된다.)
