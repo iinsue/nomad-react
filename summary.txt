@@ -53,3 +53,9 @@ Chapter3
   - 포인트는 map함수의 첫번째 argument가 진행되고 있는 순서에 맞는 item이라는 것이다.
     ex) array.map((item) => item.toUpperCase())
   - 예전 array를 가져와서 변형하는 것이고 return하는 어떤 값이던지 그 값이 새로운 array가 된다.
+
+
+#7.4 Movie App part Two
+  key : React.js 에서만, map안에서 component들을 render할 때 사용하는 것.
+  React Router : 페이지를 전환하는 것이다.
+  실습환경고정 : npm i react-router-dom@5.3.0
