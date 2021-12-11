@@ -34,3 +34,22 @@ ex) useEffect(callback, []) // 첫 렌더링때만 실행(즉, 한번만 실행)
   ex) API로 외부 데이터를 가져올 때 컴포넌트 처음 렌더링되는 그 순간에만
       API 요청을 하고 이후에 state가 변화할 때는 그 API에서 똑같은 정보를
       가져올 필요가 없다.
+
+Chapter3
+#7.0 ToDo List Part 1
+
+  - 현재 배열에 값을 추가 하고 싶다면 JS의 경우는 array.push() 로 값을 추가 했겠지만
+    React의 경우는 절대 State를 직접적으로 수정하지 않기 때문에 항상 수정하는 함수를
+    사용해야 한다.
+
+#7.1 ToDo List Part 2
+  map 함수
+  - array.map()
+  - ex) array.map(() => ":)")
+  - 하나의 array에 있는 item을 내가 원하는 무엇이든지로 바꿔서
+    새로운 array로 return 한다.
+  - map함수는 첫번째 argument로 현재의 item을 가져올 수 있다.
+    ex) array.map((item) => ":)")
+  - 포인트는 map함수의 첫번째 argument가 진행되고 있는 순서에 맞는 item이라는 것이다.
+    ex) array.map((item) => item.toUpperCase())
+  - 예전 array를 가져와서 변형하는 것이고 return하는 어떤 값이던지 그 값이 새로운 array가 된다.

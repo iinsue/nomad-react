@@ -1,5 +1,8 @@
 **JSX에서 중괄호는 자바스크립트 쓸 때 사용한다!**
+***
 **Component는 단지 JSX를 부르는 Function일 뿐이다!**
+***
+**React는 절대 State를 직접적으로 수정하지 않기 때문에 항상 수정하는 함수를 사용해야 한다.**
 
 ## Chapter1 MODULE.CSS  
   - CRA의 고유 기능으로, className을 활용하여
