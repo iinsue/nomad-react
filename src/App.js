@@ -4,12 +4,12 @@ import Detail from "./routes/Detail";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path="/movie/:id">
           <Detail />
         </Route>
-        <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />}>
+        <Route path="/" element={<Home />}>
           <Home />
         </Route>
       </Switch>
